@@ -1,58 +1,34 @@
-# Luxodd Unity Plugin 🚀
+# Luxodd Unity Plugin
 
-**Lightweight integration for building Unity games on Luxodd’s arcade platform.**
+The Luxodd Unity Plugin provides integration for Unity WebGL arcade games with the Luxodd platform.
 
----
+## Requirements
 
-## 🔗 Documentation
+- Unity 2022 LTS or newer
+- WebGL Build Support
+- Unity 6+ is supported
 
-For detailed guides, refer to the official Luxodd docs:
+## Installation
 
-- Plugins Overview: https://docs.luxodd.com/docs/category/unity-plugin  
-- Setup & Installation: https://docs.luxodd.com/docs/arcade-launch/unity-plugin/installation  
-- Configuration and Usage: https://docs.luxodd.com/docs/arcade-launch/unity-plugin/configuration  
-- Testing & Examples: https://docs.luxodd.com/docs/arcade-launch/unity-plugin/testing  
-- API Reference: https://docs.luxodd.com/docs/arcade-launch/unity-plugin/api-reference  
+1. Download the `.unitypackage` from the [`Plugin/`](./Plugin/) directory.
+2. In Unity, select **Assets > Import Package > Custom Package**.
+3. Select the downloaded package and import it.
+4. Follow the [official installation guide](https://docs.luxodd.com/docs/arcade-launch/unity-plugin/installation).
 
----
+Before upgrading, back up any customized `Assets/WebGLTemplates/LuxoddTemplate` files so they can be reviewed or merged after import.
 
-## 🚀 Quick Start
+## Documentation
 
-1. Import the `.unitypackage` into your Unity project.
-2. Follow the installation guide above.
-3. Configure settings via the WebGL template or plugin scripts.
-4. Test integration following the example game section.
-5. View API docs for advanced usage.
+See the [official Luxodd Unity Plugin documentation](https://docs.luxodd.com/docs/category/unity-plugin) for setup, configuration, testing, and API reference information.
 
----
+## Package
 
-## 🎯 Requirements
+Release packages are stored under [`Plugin/`](./Plugin/).
 
-- Unity 2021.3 or higher  
-- WebGL build support  
+Example:
 
----
+`Plugin/LuxoddGamePlugin_v_1.2.0.unitypackage`
 
-## 🗂️ Project Structure
+## Supported Platforms
 
-Luxodd.Game/
-├─ Editor/
-├─ Example/
-   ├─ Fonts/
-   ├─ Scenes/
-   ├─ Scripts/
-   ├─ Sprites/
-   └─ TexMesh Pro/
-├─ Plugins/
-   └─ WebGL/
-├─ Prefabs/
-├─ Resources/
-   └─ Missions/  
-├─ Scripts/
-   ├─ Game/
-   ├─ HelpersAndUtils/
-   ├─ Missions/
-   └─ Network/
-├─ CHANGELOG.md
-├─ PluginVersion.cs
-└─ README.md
+WebGL arcade games are the primary target. The included WebGL template and browser integration are intended for Unity WebGL builds.
